@@ -1,0 +1,37 @@
+# Updateing file
+
+``` java
+import java.io.FileWriter;
+
+public class WriteFile {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+			FileWriter fw=new FileWriter("C:\\Users\\SPURGEE\\Documents\\new.txt",true);
+			String str="The man";
+			
+			fw.write(str);
+			fw.close();
+			
+			System.out.println("Updaing is completed");
+			
+
+			
+			
+		}catch(Exception e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
+
+```
+
+
+### output
+``` java
+Updaing is completed
+````
